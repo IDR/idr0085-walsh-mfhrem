@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<OME xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06" xmlns:OME="http://www.openmicroscopy.org/Schemas/OME/2016-06" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openmicroscopy.org/Schemas/OME/2016-06 http://www.openmicroscopy.org/Schemas/OME/2016-06/ome.xsd">
+  <Image ID="Image:0" Name="FADU_tumour_Lectin_substack_deconvolved_RL_35iters_guassian_psf_4_4_80.tif">
+    <Pixels DimensionOrder="XYZCT" ID="Pixels:0:0" SizeC="1" SizeT="1" SizeX="536" SizeY="506" SizeZ="651" Type="uint8">
+      <TiffData FirstC="0" FirstT="0" FirstZ="0" PlaneCount="651">
+        <UUID FileName="FADU_tumour_Lectin_substack_deconvolved_RL_35iters_guassian_psf_4_4_80.tif">urn:uuid:jjd83lsf-2jjs-833k-ldyd-jdu8rtt2axp0</UUID>
+      </TiffData>
+    </Pixels>
+  </Image>
+</OME>
