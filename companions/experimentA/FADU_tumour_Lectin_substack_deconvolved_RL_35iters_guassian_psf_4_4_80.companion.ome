@@ -3,7 +3,7 @@
   <Image ID="Image:0" Name="FADU_tumour_Lectin_substack_deconvolved_RL_35iters_guassian_psf_4_4_80.tif">
     <Pixels DimensionOrder="XYZCT" ID="Pixels:0:0" SizeC="1" SizeT="1" SizeX="536" SizeY="506" SizeZ="651" Type="uint8">
       <TiffData FirstC="0" FirstT="0" FirstZ="0" PlaneCount="651">
-        <UUID FileName="FADU_tumour_Lectin_substack_deconvolved_RL_35iters_guassian_psf_4_4_80.tif">urn:uuid:jjd83lsf-2jjs-833k-ldyd-jdu8rtt2axp0</UUID>
+        <UUID FileName="FADU_tumour_Lectin_substack_deconvolved_RL_35iters_guassian_psf_4_4_80.tif">urn:uuid:71606A40-B167-4717-9699-6D0A24F9AD2E</UUID>
       </TiffData>
     </Pixels>
   </Image>
