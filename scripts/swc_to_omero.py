@@ -74,6 +74,7 @@ def main(conn, argv):
 
     size_y = image.getSizeY()
     paths = parse_swc(data, size_y)
+    red_int = int.from_bytes([255, 0, 0, 255], byteorder="big", signed=True)
 
     for count, path in enumerate(paths):
         points = []
@@ -83,6 +84,7 @@ def main(conn, argv):
             point.x = rdouble(x)
             point.y = rdouble(y)
             point.theZ = rint(round(z))
+            point.strokeColor = rint(red_int)
             points.append(point)
         print(f"{count}/{len(paths)} Creating ROI with {len(points)} points")
         create_roi(image, points)
