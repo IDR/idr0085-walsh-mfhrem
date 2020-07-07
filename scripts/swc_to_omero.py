@@ -1,5 +1,8 @@
 # Based on code from https://github.com/napari/napari/issues/693#issuecomment-554000321
 
+import argparse
+import sys
+
 import numpy as np
 from neurom.io import swc
 import napari
@@ -26,30 +29,40 @@ def parse_swc(data, size_y):
     Each path is [[z,y,x], [z,y,x]...] suitable for e.g. napari viewer.add_shapes(paths)
     with dimensions correct for overlay with OME image.
     """
-    break_points = [0] + list(np.nonzero(np.diff(data[:, 6]) < 0)[0]+1) + [len(data)-1]
+    break_points = (
+        [0] + list(np.nonzero(np.diff(data[:, 6]) < 0)[0] + 1) + [len(data) - 1]
+    )
     paths = []
     max_x = 0
     max_y = 0
     max_z = 0
-    for i in range(len(break_points)-1):
-        if break_points[i+1] - break_points[i] > 2:
-            path = data[break_points[i]:break_points[i+1], :3]
+    for i in range(len(break_points) - 1):
+        if break_points[i + 1] - break_points[i] > 2:
+            path = data[break_points[i] : break_points[i + 1], :3]
             # path 2D array is [[x,y,z], [x,y,z]...]
             # need to flip to get [[z,y,x], [z,y,x]]
             path = np.flip(path, 1)
             # reverse coordinate direction for y axis.
-            path[:,1] = size_y - path[:,1]
+            path[:, 1] = size_y - path[:, 1]
             paths.append(path)
-    print(f'found {len(paths)} paths')
+    print(f"found {len(paths)} paths")
     return paths
 
 
-def main(conn):
+def main(conn, argv):
 
-    data = swc.read('20200628-ftp/RL_35_guassian_4_4_80.tif_x94_y327_z241_app2_(GSBT).swc').data_block
+    parser = argparse.ArgumentParser()
+    parser.add_argument("image", help="Image ID")
+    args = parser.parse_args(argv)
 
-    img_name = 'FADU_tumour_Lectin_substack_deconvolved_RL_35iters_guassian_psf_4_4_80.tif'
-    image = conn.getObject("Image", attributes={'obj.name': img_name})
+    image_id = args.image
+
+    data = swc.read(
+        "20200628-ftp/RL_35_guassian_4_4_80.tif_x94_y327_z241_app2_(GSBT).swc"
+    ).data_block
+
+    # img_name = 'FADU_tumour_Lectin_substack_deconvolved_RL_35iters_guassian_psf_4_4_80.tif'
+    image = conn.getObject("Image", image_id)
 
     # delete existing ROIs
     roi_service = conn.getRoiService()
@@ -58,7 +71,6 @@ def main(conn):
     if roi_ids:
         print("Deleting ROIs...")
         conn.deleteObjects("Roi", roi_ids, wait=True)
-
 
     size_y = image.getSizeY()
     paths = parse_swc(data, size_y)
@@ -72,14 +84,15 @@ def main(conn):
             point.y = rdouble(y)
             point.theZ = rint(round(z))
             points.append(point)
-        print(f'{count}/{len(paths)} Creating ROI with {len(points)} points')
+        print(f"{count}/{len(paths)} Creating ROI with {len(points)} points")
         create_roi(image, points)
+
 
 # with napari.gui_qt():
 #     viewer = napari.Viewer()
 #     viewer.add_shapes(paths, shape_type='path', edge_color='blue')
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     with omero.cli.cli_login() as c:
         conn = omero.gateway.BlitzGateway(client_obj=c.get_client())
-        main(conn)
+        main(conn, sys.argv[1:])
