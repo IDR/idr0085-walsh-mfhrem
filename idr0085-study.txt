@@ -1,0 +1,104 @@
+# FILL IN AS MUCH INFORMATION AS YOU CAN.  HINTS HAVE BEEN PUT IN SOME FIELDS AFTER THE HASH # SYMBOL. REPLACE THE HINT WITH TEXT WHERE APPROPRIATE.				
+				
+# STUDY DESCRIPTION SECTION				
+# Section with generic information about the study including title, description, publication details (if applicable) and contact details				
+				
+Comment[IDR Study Accession]	idr0085			
+Study Title	Multi-fluorescence high-resolution episcopic microscopy (MF-HREM) for three dimensional imaging of adult murine organs			
+Study Type	microscopy assay			
+Study Type Term Source REF	EFO			
+Study Type Term Accession	EFO_0002909			
+Study Description	Multi-fluorescent High Resolution Episcopic Microscopy (MF-HREM) is a serial-sectioning, block-facing, wide-field fluorescence technique. It can image large volumes (>0.5mm3) at high resolution (~2um) without the need for tissue clearing or optical sectioning. We detail developments in sample processing including stain penetration, resin embedding and imaging. In addition, we describe image post-processing methods needed to segment and further quantify these data. Finally, we demonstrate the wide applicability of MF-HREM by: 1) quantifying adult mouse glomeruli. 2) identifying injected cells and vascular networks in tumour xenograft models; 3) quantifying vascular networks and white matter track orientation in mouse brain.
+Study Key Words	serial-sectioning	block-facing	deconvolution	3D			
+Study Organism	Mus musculus			
+Study Organism Term Source REF	NCBITaxon			
+Study Organism Term Accession	NCBITaxon_10090			
+Study Experiments Number	1			
+Study External URL	
+Study BioImage Archive Accession
+Study Public Release Date				
+				
+# Study Publication				
+Study PubMed ID				
+Study Publication Title	Multi-fluorescence high-resolution episcopic microscopy (MF-HREM) for three dimensional imaging of adult murine organs			
+Study Author List	Walsh C, Holroyd N, Finnerty E, Ryan SG, Sweeney PW, Shipley RJ, Walker-Samuel S 			
+Study PMC ID				
+Study DOI				
+				
+# Study Contacts				
+Study Person Last Name	Walsh			
+Study Person First Name	Claire			
+Study Person Email	c.walsh.11@ucl.ac.uk			
+Study Person Address	UCL Centre for Advanced Biomedical Imaging, Paul O'Gorman Building,University College London,72 Huntley Street,London UK, WC1E 6DD			
+Study Person ORCID	0000-0003-3769-3392			
+Study Person Roles	submitter			
+				
+# Study License and Data DOI				
+Study License	CC-BY 4.0 			
+Study License URL	https://creativecommons.org/licenses/by/4.0/			
+Study Copyright	Walsh et al.			
+Study Data Publisher	University of Dundee			
+Study Data DOI				
+				
+Term Source Name	NCBITaxon	EFO	CMPO	FBbi
+Term Source URI	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/cmpo/	http://purl.obolibrary.org/obo/
+				
+				
+# EXPERIMENT SECTION				
+# Experiment Section containing all information relative to each experiment in the study including materials used, protocols names and description, phenotype names and description. For multiple experiments this section should be repeated.  Copy and paste the whole section below and fill out for the next experiment				
+				
+Experiment Number	1			
+Comment[IDR Experiment Name]	idr0085-walsh-mfhrem/experimentA
+Experiment Sample Type	tissue			
+Experiment Description	Application of MF-HREM to imaging and analysis of adult mouse: kidney glomeruli, xenograft tumour vasculature and cell migration, brain microsvasculature and white matter orientation, brain white matter orientation and cell nuclei distribution			
+Experiment Size	4D Images: 	Average Image Dimension (XYZCT):2072x2048x1500	Total Tb: 	0.3527
+Experiment Example Images				
+Experiment Imaging Method	Multi-fluorescence high-resolution episcopic microscopy (MF-HREM)	
+Experiment Imaging Method Term Source REF	Fbbi			
+Experiment Imaging Method Term Accession	
+Experiment Comments	
+			
+				
+# assay files				
+Experiment Assay File	idr0000-experimentA-assays.txt			
+Experiment Assay File Format	tab-delimited text			
+Assay Experimental Conditions	For tumour xenograft model cells from the FaDu human breast cancer cell line were cultured in complete medium (Dulbecco’s minimum essential medium Eagle with L-glutamine (DMEM) (Lonza)+10% fetal  bovine serum (Invitrogen)) in the ratio 1:10 (vol/vol) and incubated at 37°C and 5% CO2. 			
+Assay Experimental Conditions Term Source REF				
+Assay Experimental Conditions Term Accession				
+Quality Control Description	
+			
+				
+# Protocols				
+Protocol Name	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol
+Protocol Type	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol
+Protocol Type Term Source REF	EFO	EFO		
+Protocol Type Term Accession	EFO_0003789	EFO_0003969		
+Protocol Description	For tumour xenograft model cells from the FaDu human breast cancer cell line were cultured in complete medium (Dulbecco’s minimum essential medium Eagle with L-glutamine (DMEM) (Lonza)+10% fetal  bovine serum (Invitrogen)) in the ratio 1:10 (vol/vol) and incubated at 37°C and 5% CO2.	Tumour cells were stained with CMDiI prior to innoculation.	In all cases vasculature was stained via tail vein i.v. with Dyelight649 conjugated to tomato Lectin (Vector), brain white matter was stained ex vivo by immersion in CMDiI, Cell nuceli were stained ex vivo by immersion in HCS CellMask.	Kidney glomeruil were segmented via gradient vector flow algorithm, deconvolution of datasets was performed using Richardonson-lucy algorithm, iterations and PSF details given for each image set.  
+
+				
+# Phenotypes				
+Phenotype Name				
+Phenotype Description				
+Phenotype Score Type				
+Phenotype Term Source REF	CMPO			
+Phenotype Term Name				
+Phenotype Term Accession			 	
+				
+				
+# Feature Level Data Files (give individual file details unless there is one file per well)				
+Feature Level Data File Name				
+Feature Level Data File Format				
+Feature Level Data File Description				
+Feature Level Data Column Name				
+Feature Level Data Column Description	
+		
+				
+#  Processed Data Files 				
+Processed Data File Name				
+Processed Data File Format	tab-delimited text			
+Processed Data File Description				
+Processed Data Column Name				
+Processed Data Column Type	
+Processed Data Column Annotation Level	
+Processed Data Column Description				
+Processed Data Column Link To Assay File	"
