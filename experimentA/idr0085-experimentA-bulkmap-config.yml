@@ -19,8 +19,12 @@ columns:
     clientname: Wavelength
     include: yes
 
-  - name: Comment [Image]
-    clientname: Image Comment
+  - name: Comment [Image Note]
+    clientname: Image Note
+    include: yes
+
+  - name: Comment [Analysis Note]
+    clientname: Analysis Note
     include: yes
 
   - name: Channels
