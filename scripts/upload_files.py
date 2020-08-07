@@ -22,7 +22,7 @@ project_name = "idr0085-walsh-mfhrem/experimentA"
 OMERO_DATA_DIR = "/data/OMERO"
 FILESETS_DIR = "/uod/idr/filesets/idr0085-walsh-mfhrem/"
 NAMESPACE = "openmicroscopy.org/idr/analysis/original"
-MIMETYPE = "application/octet-stream"
+MIMETYPE = "model/mesh"
 
 # [file, Image]
 to_upload = [
