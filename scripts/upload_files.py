@@ -60,8 +60,8 @@ def main(conn):
             images_by_name[image.name] = image
 
     for names in to_upload:
-        file_path = names[1]
-        image_name = names[2]
+        file_path = names[0]
+        image_name = names[1]
 
         image = images_by_name[image_name]
         print("link to", image.name)
