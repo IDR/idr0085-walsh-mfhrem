@@ -1,0 +1,9 @@
+---
+channels:
+    1:
+        active: true
+        label: vasculature
+        end: 15000.0
+        start: 0.0
+greyscale: true
+version: 2

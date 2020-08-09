@@ -1,0 +1,16 @@
+---
+channels:
+    1:
+        active: true
+        color: FFFFFF
+        label: CMDiI
+        end: 60000.0
+        start: 0.0
+    2:
+        active: true
+        color: FF00FF
+        label: HCS CellMask
+        end: 30000.0
+        start: 227.0
+greyscale: false
+version: 2

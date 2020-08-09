@@ -1,0 +1,16 @@
+---
+channels:
+    1:
+        active: true
+        color: FF00FF
+        label: CMDiI
+        end: 50000.0
+        start: 1175.0
+    2:
+        active: true
+        color: FFFF00
+        label: Lectin
+        end: 15000.0
+        start: 35.0
+greyscale: false
+version: 2

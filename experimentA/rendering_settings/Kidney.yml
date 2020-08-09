@@ -1,0 +1,16 @@
+---
+channels:
+    1:
+        active: true
+        color: FF00FF
+        label: segmented
+        end: 150.0
+        start: 0.0
+    2:
+        active: true
+        color: FFFFFF
+        label: raw
+        end: 150.0
+        start: 0.0
+greyscale: false
+version: 2
