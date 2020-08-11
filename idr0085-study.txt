@@ -62,7 +62,7 @@ Experiment Comments
 # assay files				
 Experiment Assay File	idr0000-experimentA-assays.txt			
 Experiment Assay File Format	tab-delimited text			
-Assay Experimental Conditions	For tumour xenograft model cells from the FaDu human breast cancer cell line were cultured in complete medium (Dulbecco’s minimum essential medium Eagle with L-glutamine (DMEM) (Lonza)+10% fetal  bovine serum (Invitrogen)) in the ratio 1:10 (vol/vol) and incubated at 37°C and 5% CO2. 			
+Assay Experimental Conditions	For tumour xenograft model cells from the FaDu human breast cancer cell line were cultured in complete medium (Dulbeccoï¿½s minimum essential medium Eagle with L-glutamine (DMEM) (Lonza)+10% fetal  bovine serum (Invitrogen)) in the ratio 1:10 (vol/vol) and incubated at 37'C and 5% CO2. 			
 Assay Experimental Conditions Term Source REF				
 Assay Experimental Conditions Term Accession				
 Quality Control Description	
@@ -73,7 +73,7 @@ Protocol Name	growth protocol	treatment protocol	image acquisition and feature e
 Protocol Type	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol
 Protocol Type Term Source REF	EFO	EFO		
 Protocol Type Term Accession	EFO_0003789	EFO_0003969		
-Protocol Description	For tumour xenograft model cells from the FaDu human breast cancer cell line were cultured in complete medium (Dulbecco’s minimum essential medium Eagle with L-glutamine (DMEM) (Lonza)+10% fetal  bovine serum (Invitrogen)) in the ratio 1:10 (vol/vol) and incubated at 37°C and 5% CO2.	Tumour cells were stained with CMDiI prior to innoculation.	In all cases vasculature was stained via tail vein i.v. with Dyelight649 conjugated to tomato Lectin (Vector), brain white matter was stained ex vivo by immersion in CMDiI, Cell nuceli were stained ex vivo by immersion in HCS CellMask.	Kidney glomeruil were segmented via gradient vector flow algorithm, deconvolution of datasets was performed using Richardonson-lucy algorithm, iterations and PSF details given for each image set.  
+Protocol Description	For tumour xenograft model cells from the FaDu human breast cancer cell line were cultured in complete medium (Dulbecco's minimum essential medium Eagle with L-glutamine (DMEM) (Lonza)+10% fetal  bovine serum (Invitrogen)) in the ratio 1:10 (vol/vol) and incubated at 37'C and 5% CO2.	Tumour cells were stained with CMDiI prior to innoculation.	In all cases vasculature was stained via tail vein i.v. with Dyelight649 conjugated to tomato Lectin (Vector), brain white matter was stained ex vivo by immersion in CMDiI, Cell nuceli were stained ex vivo by immersion in HCS CellMask.	Kidney glomeruil were segmented via gradient vector flow algorithm, deconvolution of datasets was performed using Richardonson-lucy algorithm, iterations and PSF details given for each image set.  
 
 				
 # Phenotypes				
