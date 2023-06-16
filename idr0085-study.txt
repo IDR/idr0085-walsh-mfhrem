@@ -15,7 +15,7 @@ Study Organism Term Source REF	NCBITaxon
 Study Organism Term Accession	NCBITaxon_10090			
 Study Experiments Number	1			
 Study External URL	
-Study BioImage Archive Accession
+Study BioImage Archive Accession	S-BIAD500
 Study Public Release Date	2020-08-12				
 				
 # Study Publication				
